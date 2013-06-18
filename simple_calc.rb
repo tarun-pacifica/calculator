@@ -27,16 +27,16 @@ def start_simple_program
 			when response == 'm'
 				do_multiplication
 			when response == 'd'
-				do_division	
+				do_division
 		end
 	start_simple_program
 	end
+	exit
 end
 
 def do_addition
-		puts "Enter your first number"
+	puts "Enter your first number"
 		a = gets.chomp.to_i
-	
 	puts "Enter your second number"
 		b = gets.chomp.to_i
 		result = addition(a,b)
@@ -44,9 +44,8 @@ def do_addition
 end
 
 def do_subtraction
-		puts "Enter your first number"
+	puts "Enter your first number"
 		a = gets.chomp.to_i
-	
 	puts "Enter your second number"
 		b = gets.chomp.to_i
 		result = subtraction(a,b)
@@ -54,9 +53,8 @@ def do_subtraction
 end
 
 def do_multiplication
-		puts "Enter your first number"
+	puts "Enter your first number"
 		a = gets.chomp.to_i
-	
 	puts "Enter your second number"
 		b = gets.chomp.to_i
 		result = multiplication(a,b)
@@ -64,11 +62,14 @@ def do_multiplication
 end
 
 def do_division
-		puts "Enter your first number"
+	puts "Enter your first number"
 		a = gets.chomp.to_i
-	
 	puts "Enter your second number"
 		b = gets.chomp.to_i
 		result = division(a,b)
 	puts "The numbers divide to #{result}"
+end
+
+def exit
+	puts "Thanks for using our calculator. Come again soon. "
 end
