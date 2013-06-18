@@ -31,7 +31,7 @@ def start_simple_program
 		end
 	start_simple_program
 	end
-	exit
+	exit 
 end
 
 def do_addition
@@ -41,6 +41,7 @@ def do_addition
 		b = gets.chomp.to_i
 		result = addition(a,b)
 	puts "The numbers added are #{result}"
+	start_simple_program
 end
 
 def do_subtraction
@@ -50,6 +51,7 @@ def do_subtraction
 		b = gets.chomp.to_i
 		result = subtraction(a,b)
 	puts "The numbers subtracted are #{result}"
+	start_simple_program
 end
 
 def do_multiplication
@@ -59,6 +61,7 @@ def do_multiplication
 		b = gets.chomp.to_i
 		result = multiplication(a,b)
 	puts "The numbers multiply to  #{result}"
+	start_simple_program
 end
 
 def do_division
@@ -68,8 +71,10 @@ def do_division
 		b = gets.chomp.to_i
 		result = division(a,b)
 	puts "The numbers divide to #{result}"
+	start_simple_program
 end
 
 def exit
 	puts "Thanks for using our calculator. Come again soon. "
+	start_main_program
 end
