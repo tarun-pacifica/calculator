@@ -6,6 +6,7 @@ def exponent(a, b)
 	a ** b 
 end
 
+def user_answer
 puts "Press sqr to find the square root of two numbers, or exp to find the exponent of two numbers: "
 user_answer = gets.chomp 
 
@@ -25,3 +26,4 @@ case
 	else
 		puts "Please only enter sqr or exp"
 	end
+end
