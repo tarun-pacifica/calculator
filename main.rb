@@ -1,2 +1,6 @@
-#Authored by
-#wbvg
+# Authors
+
+# Dan
+# Tarun Mookhey
+# Mike 
+# Will
