@@ -5,18 +5,22 @@
 # Mike 
 # Will
 
-require_relative 'advanced_calc'
-require_relative 'simple_calc'
+#require_relative 'advanced_calc' 
+#require_relative 'simple_calc'	
 
-response = menu
+
+puts "Welcome to our Calculator. Choose Simple (s) or Advanced (a) functions here: "
+response = gets.chomp
+
+#response = menu
 
 while response != 'q'
-if ('b' == response)
-	simple_calc
-	elseif ('a' == response)
-advanced_calc
+if ('s' == response)
+#simple_calc
+	elsif ('a' == response)
+#advanced_calc
 end
 
-response = menu
+response = gets.chomp
 end
 
