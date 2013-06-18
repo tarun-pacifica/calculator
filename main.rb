@@ -3,22 +3,26 @@
 # Dan
 # Tarun
 # Mike 
-# Will
+# Will 
 
 require_relative 'advanced_calc' 
 require_relative 'simple_calc'	
 
+def start_main_program
+	puts "Gday! Dan, Tarun, Mike and Will welcome you to the SUPER-CALCULATOR. Choose Simple (s) or Advanced (a) calculator here: "
+	response = gets.chomp.to_s
 
-puts "Gday! Dan, Tarun, Mike and Will welcome you to the SUPER-CALCULATOR. Choose Simple (s) or Advanced (a) functions here: "
-	response = gets.chomp
-	while response != 's' || 'a'
-	if ('s' == response)
-		do_addition
-	elsif ('a' == response)	
-		user_answer
-	else
-		puts "You can only choose from s or a. Choose Simple (s) or Advanced (a) functions here, Try again now: "
-	end
-	response = gets.chomp
+	#while response != 's' || 'a'
+		case 
+			when response == 's'
+				start_simple_program
+			when response == 'a'	
+				start_advanced_program
+			else
+				puts "Please only choose Simple (s) or Advanced (a). Try again now: "
+		end
+		response = gets.chomp.to_s
+	#end
 end
 
+start_main_program
