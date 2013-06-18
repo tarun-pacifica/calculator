@@ -4,8 +4,6 @@
 # Tarun
 # Mike 
 # Will
-<<<<<<< HEAD
-=======
 
 #require_relative 'advanced_calc' 
 #require_relative 'simple_calc'	
@@ -27,7 +25,6 @@ end
 
 response = gets.chomp
 end
->>>>>>> 811cb67298684c1a3a686df47e662755b8c503b9
 
 #require_relative 'advanced_calc' 
 #require_relative 'simple_calc'	
