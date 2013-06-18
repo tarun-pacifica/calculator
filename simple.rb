@@ -16,6 +16,9 @@ def division(a, b)
 	a / b
 end
 
+def simple_calc()
+	end
+
 
 def do_addition
 		puts "Enter any number"
@@ -77,11 +80,20 @@ while response != 'q'
 		do_multiplication
 	
 	elsif ('d' == response)
-		do_division
+		do_division	
 
 	end
-	puts "Welcome to the simple calculator. Choose to add (a) , subtract (s) , multiply (m) or divide (d) or (q) to quit"
-	response = gets.chomp
+	
+
+		puts "Welcome to the simple calculator. Choose to add (a) , subtract (s) , multiply (m) or divide (d)"
+		puts "[TO EXIT] Press (q)"
+	if ('q' == response)
+		main
+	end
+		response = gets.chomp
+
+
+
 
 end	
 
